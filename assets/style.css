@@ -1,0 +1,230 @@
+/* Google fonts import */
+@import url('https://fonts.googleapis.com/css2?family=Exo:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+/* CSS Variables */
+:root {
+    --primary-font: "Nunito", sans-serif;
+    --secondary-font: "Exo", serif;
+    --primary-color: #005c6e;
+    /* teal */
+    --secondary-color: #003d4f;
+    /* dark teal */
+    --highlight-color: #96afb8;
+    /* grey */
+    --highlight-color-light: #e5fdff;
+    /* pale blue */
+}
+
+/* Global styles */
+body {
+    font-family: var(--primary-font);
+    padding-top: 40px;
+    /* top of header pushed down making it visible under fixed navbar */
+}
+
+h1,
+h2,
+h3 {
+    font-family: var(--secondary-font);
+    color: var(--primary-color);
+}
+
+h2 {
+    text-transform: uppercase;
+    padding-bottom: 1rem;
+}
+
+.section {
+    padding-top: 3rem;
+    padding-bottom: 2rem;
+}
+
+/* Buttons */
+.custom-button-outline {
+    border: 3px solid var(--secondary-color);
+    padding: 7px 25px;
+    color: var(--secondary-color);
+}
+
+.custom-button-outline:hover {
+    color: white;
+    background-color: var(--secondary-color);
+    transition: color 0.3s ease-in-out;
+}
+
+/* Navbar */
+#navbar {
+    background-color: white;
+    font-family: var(--secondary-font);
+    color: var(--primary-color);
+    font-size: 1rem;
+    text-transform: uppercase;
+    padding-top: 1.5rem;
+}
+
+#navbar .logo {
+    width: 30px;
+}
+
+#navbar .navbar-brand,
+.nav-link,
+.navbar-toggler {
+    color: var(--primary-color)
+}
+
+.navbar-brand,
+.nav-item {
+    font-size: 1rem;
+}
+
+/* Header */
+.header {
+    padding-bottom: 2rem;
+}
+
+.header p {
+    color: var(--primary-color);
+}
+
+/* About section */
+#about {
+    background-color: var(--secondary-color);
+    margin: 0;
+    min-width: 100%;
+    padding-bottom: 2rem;
+}
+
+#about h2,
+p {
+    color: white;
+}
+
+#about .about-image {
+    max-width: 100px;
+    padding-bottom: 1rem;
+}
+
+/* Brief service section on Home page */
+.brief-services .card {
+    border: none;
+    min-height: auto;
+}
+
+.brief-services .card-img-top {
+    max-width: 120px;
+    align-self: center;
+}
+
+.brief-services p {
+    color: var(--primary-color);
+}
+
+/* Our services page */
+.list-of-services {
+    padding-bottom: 2rem;
+}
+
+.list-of-services p {
+    color: var(--primary-color);
+}
+
+.list-of-services .service-icons {
+    max-width: 120px;
+    min-height: auto;
+}
+
+hr {
+    padding-bottom: 1rem;
+    color: var(--highlight-color);
+}
+
+/* Portfolio page */
+#media img {
+    width: 100%;
+    line-height: 1em;
+}
+
+#media {
+    line-height: 0;
+}
+
+#media .modal-fullscreen {
+    aspect-ratio: 16 / 9;
+    width: 100%;
+}
+
+iframe {
+    border-width: 0px;
+}
+
+/* Contact Us page */
+#contact-form {
+    padding-bottom: 4rem;
+}
+
+/* Success page */
+.success p {
+    color: var(--primary-color);
+    padding-bottom: 1rem;
+}
+
+.success h1 {
+    padding-bottom: 1rem;
+}
+
+/* Footer section */
+/*Contact section */
+#contact {
+    background-color: var(--secondary-color);
+    color: white;
+    padding-top: 3rem;
+}
+
+#contact h2 {
+    color: white;
+}
+
+#contact i {
+    color: var(--highlight-color);
+    margin-right: 10px;
+}
+
+#contact .social-favicons i {
+    color: var(--highlight-color);
+    font-size: 2rem;
+    padding-bottom: 1rem;
+}
+
+#contact .social-favicons i:hover {
+    color: var(--highlight-color-light);
+    transition: color 0.3s ease-in-out;
+
+}
+
+/* Copyright section */
+.copyright p {
+    color: var(--highlight-color);
+    font-size: 10px;
+}
+
+/* Media queries */
+/* Media query: tablets and larger (768px and up) */
+@media screen and (min-width: 768px) {
+    #media {
+        column-count: 2;
+        font-size: 0;
+    }
+}
+
+/* Large devices (small laptops, 992px and up) */
+@media screen and (min-width: 992px) {
+    /* Make all service cards the same height for consistency */
+    .list-of-services .col-lg-8 {
+        text-align: left;
+    }
+
+    #media {
+        column-count: 3;
+        font-size: 0;
+    }
+}
