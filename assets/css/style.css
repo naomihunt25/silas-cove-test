@@ -189,23 +189,24 @@ h2 {
 }
 
 /* Media queries */
+/* Carousel max width default (mobile first) */
+.silas-carousel {
+  max-width: 100%;
+  padding: 0 1rem;
+  margin: 0 auto;
+}
+
 /* Media query: tablets and larger (768px and up) */
-@media screen and (min-width: 768px) {
-  #media {
-    column-count: 2;
-    font-size: 0;
+@media (min-width: 768px) {
+  .silas-carousel {
+    max-width: 600px;
+    padding: 0;
   }
 }
 
-/* Large devices (small laptops, 992px and up) */
-@media screen and (min-width: 992px) {
-  /* Make all service cards the same height for consistency */
-  .list-of-services .col-lg-8 {
-    text-align: left;
-  }
-
-  #media {
-    column-count: 3;
-    font-size: 0;
+/* Media query: large devices (small laptops, 992px and up) */
+@media (min-width: 992px) {
+  .silas-carousel {
+    max-width: 800px;
   }
 }

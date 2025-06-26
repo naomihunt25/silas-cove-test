@@ -111,76 +111,47 @@
       </div>
     </header>
 
-    <main>
-      <div class="container">
-        <ul
-          class="nav nav-tabs d-flex justify-content-between align-items-center text-dark p-3"
-        >
-          <li class="nav-item">
-            <a
-              href="#"
-              class="p-1 border rounded-circle"
-              id="prev_page"
-              title="previous page"
-              data-bs-toggle="tooltip"
-              data-bs-placement="bottom"
-            >
-              <i class="bi bi-chevron-left"></i>
-            </a>
-
-            <input
-              type="number"
-              id="current_page"
-              value="1"
-              class="d-inline form-control"
+    <!-- Carousel -->
+    <main class="container my-5">
+      <div
+        id="carouselExampleControls"
+        class="carousel slide mx-auto silas-carousel"
+        data-bs-ride="carousel"
+      >
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img
+              class="d-block w-100"
+              src="assets/images/menu-page-1.png"
+              alt="First slide"
             />
-
-            <a
-              href="#"
-              class="p-1 border rounded-circle"
-              id="next_page"
-              data-bs-toggle="tooltip"
-              data-bs-placement="bottom"
-              title="next page"
-            >
-              <i class="bi bi-chevron-right"></i>
-            </a>
-
-            <!-- page 1 of 5 -->
-            Page
-            <span id="page_num"></span>
-            of
-            <span id="page_count"></span>
-          </li>
-
-          <li class="nav-item">
-            <button
-              class="rounded-circle p-2 border-0 btn btn-primary"
-              id="zoom_in"
-              data-bs-toggle="tooltip"
-              data-bs-placement="bottom"
-              title="zoom in"
-            >
-              <i class="bi bi-zoom-in"></i>
-            </button>
-
-            <button
-              class="rounded-circle p-2 border-0 btn btn-primary"
-              id="zoom_out"
-              data-bs-toggle="tooltip"
-              data-bs-placement="bottom"
-              title="zoom out"
-            >
-              <i class="bi bi-zoom-out"></i>
-            </button>
-          </li>
-        </ul>
-
-        <!-- canvas to place the PDF -->
-        <canvas
-          id="canvas"
-          class="d-flex flex-column justify-content-center align-items-center mx-auto"
-        ></canvas>
+          </div>
+          <div class="carousel-item">
+            <img
+              class="d-block w-100"
+              src="assets/images/menu-page-2.png"
+              alt="Second slide"
+            />
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExampleControls"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExampleControls"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
       </div>
     </main>
 
@@ -232,23 +203,12 @@
       </div>
     </footer>
 
-    <!-- PDF.js CDN -->
-    <script src="https://cdn.jsdelivr.net/npm/pdfjs-dist@2.10.377/build/pdf.min.js"></script>
-
-    <!-- Bootstap JavaScript and Popper.js -->
+    <!-- Bootstrap JS -->
     <script
-      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
-      integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
       crossorigin="anonymous"
     ></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
-      integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
-      crossorigin="anonymous"
-    ></script>
-
-    <!-- Custom javascript file -->
-    <script src="script.js"></script>
 
     <!-- Font Awesome Kit -->
     <script
