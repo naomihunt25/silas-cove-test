@@ -110,21 +110,45 @@
             <strong>Booking details</strong>
           </h1>
           <p class="my-4 lead">
-            <strong>Lunch service:</strong> 12pm &shy; 3pm <br /><br />
-            <strong>Dinner service:</strong> 5:30pm &shy; 8pm <br /><br />
+            <strong>Lunch service:</strong> 12pm — 3pm <br /><br />
+            <strong>Dinner service:</strong> 5:30pm — 8pm <br /><br />
             <strong>Reservation policy:</strong> We recommend booking at least
             24 hours in advance. For larger groups, please contact us directly.
-            <br /><br />
-            <strong>Special requests:</strong> Let us know if you have any
-            dietary preferences or special occasions to celebrate.
           </p>
-          <br /><br />
         </div>
       </div>
     </header>
 
     <main>
-        
+        <section class="container mt-5 mb-5">
+  <form id="booking-form" action="https://your-flask-app-url/book" method="POST">
+    <div class="mb-3">
+      <label for="name" class="form-label">Full Name</label>
+      <input type="text" class="form-control" name="name" id="name" required />
+    </div>
+    <div class="mb-3">
+      <label for="email" class="form-label">Email Address</label>
+      <input type="email" class="form-control" name="email" id="email" required />
+    </div>
+    <div class="mb-3">
+      <label for="phone" class="form-label">Phone Number</label>
+      <input type="tel" class="form-control" name="phone" id="phone" required />
+    </div>
+    <div class="mb-3">
+      <label for="date" class="form-label">Reservation Date</label>
+      <input type="date" class="form-control" name="date" id="date" required />
+    </div>
+    <div class="mb-3">
+      <label for="time" class="form-label">Reservation Time</label>
+      <input type="time" class="form-control" name="time" id="time" required />
+    </div>
+    <div class="mb-3">
+      <label for="guests" class="form-label">Number of Guests</label>
+      <input type="number" class="form-control" name="guests" id="guests" required min="1" />
+    </div>
+    <button type="submit" class="btn custom-button-outline w-100">Book now</button>
+  </form>
+</section>
     </main>
 
     <!-- Footer / contact details section -->

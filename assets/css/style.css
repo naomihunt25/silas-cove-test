@@ -134,6 +134,16 @@ h2 {
     position: center;
 }
 
+/* Bookings page */
+form {
+  background-color: #ffffff;
+  border: 2px solid #113859;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(17, 56, 89, 0.1);
+}
+
+
 /* Contact Us page */
 
 #contact p {
