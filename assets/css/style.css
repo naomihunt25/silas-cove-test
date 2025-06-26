@@ -115,30 +115,20 @@ h2 {
 }
 
 .intro {
-  padding: 5rem;
+  padding: 2rem;
   color: var(--primary-color);
 }
 
-/* Our services page */
-.list-of-services {
-  padding-bottom: 2rem;
+/* About Us page */
+
+.custom-text-color th,
+.custom-text-color td {
+  color: var(--primary-color) !important;
 }
 
-.list-of-services p {
-  color: var(--primary-color);
+.map {
+    position: center;
 }
-
-.list-of-services .service-icons {
-  max-width: 120px;
-  min-height: auto;
-}
-
-hr {
-  padding-bottom: 1rem;
-  color: var(--highlight-color);
-}
-
-
 
 /* Contact Us page */
 
@@ -191,7 +181,7 @@ hr {
 /* Copyright section */
 .copyright p {
   color: var(--highlight-color);
-  font-size: 10px;
+  font-size: 12px;
 }
 
 /* Media queries */
