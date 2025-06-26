@@ -121,6 +121,8 @@
 
   <main>
   <section class="container mt-5 mb-5">
+     <div class="row justify-content-center">
+    <div class="col-12 col-md-8">
     <form id="booking-form" action="https://your-flask-app-url/book" method="POST">
       <div class="mb-3">
         <label for="name" class="form-label">Full Name</label>
@@ -139,12 +141,27 @@
 
       <div class="mb-3">
         <label for="date" class="form-label">Reservation Date</label>
-        <input type="date" class="form-control" name="date" id="date" required />
+        <input
+          type="date"
+          class="form-control"
+          name="date"
+          id="date"
+          required
+          max="2027-12-31"
+        />
       </div>
 
       <div class="mb-3">
         <label for="time" class="form-label">Reservation Time</label>
-        <input type="time" class="form-control" name="time" id="time" required min="12:00" max="20:00" />
+        <input
+          type="time"
+          class="form-control"
+          name="time"
+          id="time"
+          required
+          min="12:00"
+          max="20:00"
+        />
       </div>
 
       <div class="mb-3">
@@ -162,6 +179,8 @@
 
       <button type="submit" class="btn custom-button-outline w-100">Book now</button>
     </form>
+    </div>
+  </div>
   </section>
 </main>
 
