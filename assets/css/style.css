@@ -31,6 +31,10 @@ h2 {
   padding-bottom: 1rem;
 }
 
+.lead {
+    color: var(--primary-color);
+}
+
 .section {
   padding-top: 4rem;
   padding-bottom: 5rem;
@@ -137,6 +141,10 @@ hr {
 
 
 /* Contact Us page */
+
+#contact p {
+    color: var(--primary-color);
+}
 #contact-form {
   padding-bottom: 4rem;
 }
